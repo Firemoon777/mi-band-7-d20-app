@@ -5,8 +5,8 @@
 	  onInit(arg) {
 		if(arg == "adv" || arg === "dis") {
 			const result = [
-				Math.floor((Math.random() * 19)) + 1,
-				Math.floor((Math.random() * 19)) + 1
+				Math.ceil((Math.random() * 20)),
+				Math.ceil((Math.random() * 20))
 			];
 			console.log(result)
 			let text_color = 0x000000;
@@ -73,7 +73,7 @@
 				y: 193, 
 				src: "roll/d20-blue.png",
 			})
-			const result = Math.floor((Math.random() * 19)) + 1;
+			const result = Math.ceil((Math.random() * 20));
 			let color;
 			if(result === 1) {
 				color = 0xff0000; 
